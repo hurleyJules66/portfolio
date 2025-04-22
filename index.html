@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hurley Jules Portfolio</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet" />
+
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Hurley Jules</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav id="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="btn small">🌙</button>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <h1>Hello, I'm Hurley Jules</h1>
+    <p>a front-end developer based in Nairobi, Kenya.</p> 
+       <p>I have worked on a wide range of front-end projects
+        with a focus on creating clean, well-crafted interfaces 
+        that not only look great but also provide a seamless user experience.</p>
+    <button class="btn" onclick="document.location='#projects'">View My Work</button>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects" data-aos="fade-up">
+    <h2>My Work</h2>
+    <p>A collection of projects I've worked on.</p>
+    <a href="https://github.com/hurleyjules66" target="_blank" class="github-link" aria-label="GitHub">
+        <svg class="github-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 0C5.37 0 0 5.373 0 12a12 12 0 008.207 11.385c.6.111.793-.26.793-.577v-2.023c-3.338.726-4.042-1.611-4.042-1.611-.546-1.387-1.333-1.756-1.333-1.756-1.09-.746.082-.731.082-.731 1.204.085 1.837 1.236 1.837 1.236 1.07 1.832 2.81 1.303 3.495.996.108-.776.418-1.303.762-1.603-2.665-.304-5.466-1.334-5.466-5.933 0-1.311.468-2.382 1.235-3.222-.124-.304-.535-1.528.117-3.184 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 013.006-.404c1.02.005 2.047.138 3.006.404 2.29-1.553 3.296-1.23 3.296-1.23.655 1.656.244 2.88.12 3.184.77.84 1.233 1.91 1.233 3.222 0 4.61-2.806 5.625-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .32.192.694.8.576A12 12 0 0024 12c0-6.627-5.373-12-12-12z"/>
+        </svg>
+      </a>
+    <div class="project-grid">
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="images/project1.png" alt="Project 1" />
+        <h3>Hapa Kule Blog</h3>
+        <p>Hapa Kule Blog is a lightweight, dynamic blog platform designed to showcase posts,
+             allow user interactions through comments, and provide admin control for post management.
+              Built using PHP, MySQL, and Bootstrap, it features a clean interface, responsive design, 
+              and smooth user experience for both readers and admins.</p>
+        <a href="https://hapakule.lovestoblog.com" target="_blank">View Project →</a>
+      </div>
+      <!-- <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="images/project2.png" alt="Project 2" />
+        <h3>Project Two</h3>
+        <p>A short description of your second project.</p>
+        <a href="#" target="_blank">View Project →</a>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about" data-aos="fade-right">
+    <h2>👨‍💻 About Me</h2>
+    <p>Hi, I'm Hurley Jules — a passionate web developer with a strong foundation in PHP,
+         MySQL, HTML, CSS, and JavaScript.</p><p> I enjoy building clean, user-friendly websites
+          and web applications that solve real problems and look great across all devices.</p>
+          <p>Currently, I'm sharpening my skills by creating personal projects like Hapa Kule Blog, 
+          while exploring new tools</p> <p>and frameworks to grow as a full-stack developer. I'm also well-versed
+          in working with Bootstrap for styling and have</p><p>a growing interest in backend and database optimization.
+          Whether it's crafting engaging UIs or building scalable backend systems,</p><p> I love
+           turning ideas into functional digital experiences.</p>
+  </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" data-aos="fade-left">
+        <h2>Contact</h2>
+        <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+        <br/>
+        <a href="mailto:hurleyjules66@gmail.com" class="btn">Email Me</a>
+    </section>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+</body>
+</html>
