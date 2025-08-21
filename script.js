@@ -15,6 +15,11 @@ window.addEventListener("DOMContentLoaded", () => {
       document.body.classList.toggle("light-theme");
       const isLight = document.body.classList.contains("light-theme");
       themeToggle.textContent = isLight ? "🌞" : "🌙";
+      
+// // Change text for elements with class .light
+//   document.querySelectorAll(".light").forEach(el => {
+//     el.textContent = isLight ? "lightHERO" : "darkHERO";
+//   });
     });
   });
   
